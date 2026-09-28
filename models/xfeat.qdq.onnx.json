@@ -1,0 +1,17 @@
+{
+  "calibration_videos": [
+    "fixtures/hinge.mp4",
+    "fixtures/slider.mp4"
+  ],
+  "calibration_frames": 40,
+  "activation": "QUInt16",
+  "weights": "QUInt8",
+  "model_sha256": "34bf23296e7e3a386f30436229eecee5111fd0f91ab97b163a53d6ea4c3b79e9",
+  "cpu_output_mean_absolute_errors": [
+    0.15153353959321975,
+    0.36218100786209106,
+    0.008717297995463013
+  ],
+  "scope": "CPU QDQ numerical check only; NPU compilation/execution and control quality unverified",
+  "npu_verified": false
+}

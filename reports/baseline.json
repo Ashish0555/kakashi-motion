@@ -1,0 +1,686 @@
+{
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "opencv": "4.11.0"
+  },
+  "scope": "synthetic development video fixtures, CPU; no physical camera or Snapdragon present",
+  "results": [
+    {
+      "backend": "orb",
+      "fixture": "hinge",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 20.46890799999801,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.724597500034179,
+        "p95": 45.12720774999936,
+        "max": 62.945260999981656
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.0015611173392841016,
+        "p95": 0.011046339643252946,
+        "max": 0.019611598479637837
+      },
+      "raw_control_mae": 0.0034289821704588585,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.0006364678338648585,
+      "whole_prop_only_raw_peak_to_peak": 0.0025498389476051875,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "hinge",
+        "low": 6.23798905360694e-05,
+        "high": 0.8326286442564397,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          293.4757371459241,
+          222.99170904277028
+        ],
+        "residual_px": 2.022615141711378,
+        "angle_span_deg": 47.702533113139424,
+        "travel_px": 297.03392811993217,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "ORB + LK \u00b7 CPU (classical)",
+        "model": null,
+        "provider": "CPU / OpenCV",
+        "npu_verified": false,
+        "model_ms": null,
+        "features_ms": 6.899062000002232,
+        "quantization": "not applicable"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "orb",
+      "fixture": "slider",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 17.61575199998333,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 6.112628000039422,
+        "p95": 46.06994564998105,
+        "max": 65.78131700007361
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.008949809836012013,
+        "p95": 0.02188799108947271,
+        "max": 0.03000497186047134
+      },
+      "raw_control_mae": 0.0094933707103175,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.009435653649265817,
+      "whole_prop_only_raw_peak_to_peak": 0.03216461451016156,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "slider",
+        "low": 0.050365810919909236,
+        "high": 78.61012181328371,
+        "axis": [
+          0.9999613113856677,
+          0.008796347642948925
+        ],
+        "pivot": null,
+        "residual_px": 1.4765630253826088,
+        "angle_span_deg": 0.13173162547434197,
+        "travel_px": 78.5597560023638,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "ORB + LK \u00b7 CPU (classical)",
+        "model": null,
+        "provider": "CPU / OpenCV",
+        "npu_verified": false,
+        "model_ms": null,
+        "features_ms": 5.322369000055005,
+        "quantization": "not applicable"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "orb",
+      "fixture": "occlusion",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 16.492790999905083,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.630794000012429,
+        "p95": 48.80279970006996,
+        "max": 65.6223510000018
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.0035011366686186762,
+        "p95": 0.011576561059952972,
+        "max": 0.020101931103014836
+      },
+      "raw_control_mae": 0.004466212157448036,
+      "fully_visible_tracking_loss_fraction": 0.014760147601476014,
+      "post_learning_unavailable_fraction": 0.12745098039215685,
+      "whole_prop_only_raw_std": 0.006278170188680484,
+      "whole_prop_only_raw_peak_to_peak": 0.017746247609320365,
+      "recovery_after_cover_removed_ms": 366.66666666666663,
+      "proposal": {
+        "kind": "hinge",
+        "low": 6.23798905360694e-05,
+        "high": 0.8327943070574937,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          290.7705373758271,
+          224.3921928228402
+        ],
+        "residual_px": 1.9724606760075574,
+        "angle_span_deg": 47.71202489246213,
+        "travel_px": 296.28416775489325,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "ORB + LK \u00b7 CPU (classical)",
+        "model": null,
+        "provider": "CPU / OpenCV",
+        "npu_verified": false,
+        "model_ms": null,
+        "features_ms": 5.348077000007834,
+        "quantization": "not applicable"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "xfeat",
+      "fixture": "hinge",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 38.929041000073994,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.628527999988364,
+        "p95": 25.016128200036295,
+        "max": 36.1797260000003
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.006122815072458154,
+        "p95": 0.013804181260051701,
+        "max": 0.02007677220141335
+      },
+      "raw_control_mae": 0.006039279342564881,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.003022766303332009,
+      "whole_prop_only_raw_peak_to_peak": 0.010953240485550242,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "hinge",
+        "low": 4.471560559971173e-06,
+        "high": 0.829710145968102,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          290.79733144861785,
+          223.62974060978155
+        ],
+        "residual_px": 3.2545254783783584,
+        "angle_span_deg": 47.5386333816078,
+        "travel_px": 296.02619206726854,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "XFeat + LK \u00b7 CPU",
+        "model": "xfeat.onnx",
+        "sha256": "c77562058b3511df83a81c2804d3696928f403af77239aa51a3fb00abc1171c1",
+        "provider": [
+          "CPUExecutionProvider"
+        ],
+        "npu_verified": false,
+        "model_ms": 5.9540749999769105,
+        "features_ms": 7.797048999918843,
+        "neural_refresh_hz": 9.592726027707506,
+        "quantization": "FP32",
+        "input": "1\u00d71\u00d7256\u00d7320; grayscale /255, instance normalization on CPU"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "xfeat",
+      "fixture": "slider",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 30.647643999941465,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.495211499976449,
+        "p95": 23.440357899977474,
+        "max": 33.74090800002705
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.0024123211260660866,
+        "p95": 0.009023087832263941,
+        "max": 0.010744303467195349
+      },
+      "raw_control_mae": 0.003248169417769013,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.00409628383671143,
+      "whole_prop_only_raw_peak_to_peak": 0.014145241723155288,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "slider",
+        "low": 0.06028203622225427,
+        "high": 77.98512590409088,
+        "axis": [
+          0.9999972300694182,
+          -0.0023536893361834677
+        ],
+        "pivot": null,
+        "residual_px": 0.44191848790161936,
+        "angle_span_deg": 0.13591137428833377,
+        "travel_px": 77.92484386786863,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "XFeat + LK \u00b7 CPU",
+        "model": "xfeat.onnx",
+        "sha256": "c77562058b3511df83a81c2804d3696928f403af77239aa51a3fb00abc1171c1",
+        "provider": [
+          "CPUExecutionProvider"
+        ],
+        "npu_verified": false,
+        "model_ms": 6.04466099991896,
+        "features_ms": 8.17623000000367,
+        "neural_refresh_hz": 9.857251986309658,
+        "quantization": "FP32",
+        "input": "1\u00d71\u00d7256\u00d7320; grayscale /255, instance normalization on CPU"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "xfeat",
+      "fixture": "occlusion",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 23.063900000011017,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.305554500012022,
+        "p95": 22.638053549979993,
+        "max": 30.927721000011843
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.004172604810632571,
+        "p95": 0.013442431155845574,
+        "max": 0.016767675057659748
+      },
+      "raw_control_mae": 0.0052117706808787,
+      "fully_visible_tracking_loss_fraction": 0.09225092250922509,
+      "post_learning_unavailable_fraction": 0.27941176470588236,
+      "whole_prop_only_raw_std": 0.004489656654061489,
+      "whole_prop_only_raw_peak_to_peak": 0.014898303167402815,
+      "recovery_after_cover_removed_ms": 500.0,
+      "proposal": {
+        "kind": "hinge",
+        "low": 4.471560559971173e-06,
+        "high": 0.829710145968102,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          290.79733144861785,
+          223.62974060978155
+        ],
+        "residual_px": 3.2545254783783584,
+        "angle_span_deg": 47.5386333816078,
+        "travel_px": 296.02619206726854,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "XFeat + LK \u00b7 CPU",
+        "model": "xfeat.onnx",
+        "sha256": "c77562058b3511df83a81c2804d3696928f403af77239aa51a3fb00abc1171c1",
+        "provider": [
+          "CPUExecutionProvider"
+        ],
+        "npu_verified": false,
+        "model_ms": 6.689024000024801,
+        "features_ms": 8.80343799997263,
+        "neural_refresh_hz": 24.959265920417206,
+        "quantization": "FP32",
+        "input": "1\u00d71\u00d7256\u00d7320; grayscale /255, instance normalization on CPU"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "marker",
+      "fixture": "marker",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 6.392085000015868,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 3.1989120000162075,
+        "p95": 3.6872737999374294,
+        "max": 9.05118200000743
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.006102377632454914,
+        "p95": 0.015424148766749843,
+        "max": 0.022726285757253106
+      },
+      "raw_control_mae": 0.006715103812896963,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.0059669266078463505,
+      "whole_prop_only_raw_peak_to_peak": 0.024383280088626447,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "hinge",
+        "low": 0.0,
+        "high": 0.839723704434354,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          292.4966327952585,
+          222.60845042117745
+        ],
+        "residual_px": 2.6602218330096843,
+        "angle_span_deg": 48.11262422117945,
+        "travel_px": 299.95988673355413,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "ArUco 0/1 \u00b7 CPU (marker baseline)",
+        "provider": "CPU / OpenCV",
+        "npu_verified": false,
+        "model_ms": null
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "xfeat-qdq",
+      "fixture": "hinge",
+      "error": "Motion does not fit one planar joint (hinge error 4.0px; slide error 18.4px). Avoid bending, perspective changes, and occlusion; reselect and retry."
+    },
+    {
+      "backend": "xfeat-qdq",
+      "fixture": "slider",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 26.195269999902848,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 6.522505500015541,
+        "p95": 24.803555849990744,
+        "max": 39.540906999945946
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.0026881614838776824,
+        "p95": 0.007203779889028833,
+        "max": 0.011740635716292358
+      },
+      "raw_control_mae": 0.0031713600706090852,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.0037438519708781082,
+      "whole_prop_only_raw_peak_to_peak": 0.014458051924162663,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "slider",
+        "low": 0.04164835940303891,
+        "high": 78.21896761750466,
+        "axis": [
+          0.9999999336493506,
+          0.000364281888937786
+        ],
+        "pivot": null,
+        "residual_px": 0.37860177533686323,
+        "angle_span_deg": 0.14398509353783193,
+        "travel_px": 78.17731925810162,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "XFeat + LK \u00b7 CPU \u00b7 QDQ",
+        "model": "xfeat.qdq.onnx",
+        "sha256": "34bf23296e7e3a386f30436229eecee5111fd0f91ab97b163a53d6ea4c3b79e9",
+        "provider": [
+          "CPUExecutionProvider"
+        ],
+        "npu_verified": false,
+        "model_ms": 7.4984169999652295,
+        "features_ms": 9.414920999915921,
+        "neural_refresh_hz": 9.33793020228941,
+        "quantization": "QDQ candidate",
+        "input": "1\u00d71\u00d7256\u00d7320; grayscale /255, instance normalization on CPU"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "xfeat-qdq",
+      "fixture": "occlusion",
+      "joint_configuration": "automatic hypothesis fitting",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 26.369221000095422,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.341497999950207,
+        "p95": 21.982809249993807,
+        "max": 28.907986000035635
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.0042589445385343705,
+        "p95": 0.013516160440534497,
+        "max": 0.01690920486192249
+      },
+      "raw_control_mae": 0.00525150228431606,
+      "fully_visible_tracking_loss_fraction": 0.11070110701107011,
+      "post_learning_unavailable_fraction": 0.30392156862745096,
+      "whole_prop_only_raw_std": 0.004459093416919311,
+      "whole_prop_only_raw_peak_to_peak": 0.014814414802071574,
+      "recovery_after_cover_removed_ms": 633.3333333333333,
+      "proposal": {
+        "kind": "hinge",
+        "low": 5.860619123630418e-05,
+        "high": 0.8294802665912855,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          288.3432449331142,
+          225.50050948369451
+        ],
+        "residual_px": 3.775047637703193,
+        "angle_span_deg": 47.52236057765586,
+        "travel_px": 295.4703106197306,
+        "samples": 90,
+        "manual": false,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "XFeat + LK \u00b7 CPU \u00b7 QDQ",
+        "model": "xfeat.qdq.onnx",
+        "sha256": "34bf23296e7e3a386f30436229eecee5111fd0f91ab97b163a53d6ea4c3b79e9",
+        "provider": [
+          "CPUExecutionProvider"
+        ],
+        "npu_verified": false,
+        "model_ms": 8.477005000031568,
+        "features_ms": 10.489875000075699,
+        "neural_refresh_hz": 25.805218656884644,
+        "quantization": "QDQ candidate",
+        "input": "1\u00d71\u00d7256\u00d7320; grayscale /255, instance normalization on CPU"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "orb",
+      "fixture": "hinge",
+      "joint_configuration": "manual ground-truth pivot/axis",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 16.124877999914133,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.077454000002035,
+        "p95": 42.301651350027214,
+        "max": 64.64645899995958
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.0015611173392841016,
+        "p95": 0.011046339643252946,
+        "max": 0.019611598479637837
+      },
+      "raw_control_mae": 0.0034289821704588585,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.0006364678338648585,
+      "whole_prop_only_raw_peak_to_peak": 0.0025498389476051875,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "hinge",
+        "low": 6.23798905360694e-05,
+        "high": 0.8326286442564397,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": [
+          293.0,
+          223.0
+        ],
+        "residual_px": 2.0978699783668264,
+        "angle_span_deg": 47.702533113139424,
+        "travel_px": 297.03392811993217,
+        "samples": 90,
+        "manual": true,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "ORB + LK \u00b7 CPU (classical)",
+        "model": null,
+        "provider": "CPU / OpenCV",
+        "npu_verified": false,
+        "model_ms": null,
+        "features_ms": 5.111921999969127,
+        "quantization": "not applicable"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    },
+    {
+      "backend": "orb",
+      "fixture": "slider",
+      "joint_configuration": "manual ground-truth pivot/axis",
+      "input": "synthetic video, development (not held-out real props)",
+      "source_fps": 30,
+      "processed_source_fps": 15.0,
+      "frames_processed": 300,
+      "selection": "two ground-truth fixture boxes; markers automatically detected for marker baseline",
+      "automatic_selection_compute_ms": 13.922652000019298,
+      "human_setup_effort_seconds": null,
+      "processing_ms": {
+        "p50": 5.711492999978418,
+        "p95": 41.737399149945986,
+        "max": 64.72534299996369
+      },
+      "raw_control_absolute_error": {
+        "p50": 0.008847242921874165,
+        "p95": 0.0217331360588683,
+        "max": 0.02981613521992785
+      },
+      "raw_control_mae": 0.009434768777242152,
+      "fully_visible_tracking_loss_fraction": 0.0,
+      "post_learning_unavailable_fraction": 0.0,
+      "whole_prop_only_raw_std": 0.009413945927145088,
+      "whole_prop_only_raw_peak_to_peak": 0.03210951530823425,
+      "recovery_after_cover_removed_ms": null,
+      "proposal": {
+        "kind": "slider",
+        "low": 0.05048555638528586,
+        "high": 78.60667601470794,
+        "axis": [
+          1.0,
+          0.0
+        ],
+        "pivot": null,
+        "residual_px": 1.3757798252812414,
+        "angle_span_deg": 0.13173162547434197,
+        "travel_px": 78.55619045832266,
+        "samples": 90,
+        "manual": true,
+        "version": 1
+      },
+      "actual_backend": {
+        "name": "ORB + LK \u00b7 CPU (classical)",
+        "model": null,
+        "provider": "CPU / OpenCV",
+        "npu_verified": false,
+        "model_ms": null,
+        "features_ms": 5.708513000058701,
+        "quantization": "not applicable"
+      },
+      "camera_to_display_ms": null,
+      "power_watts": null,
+      "render_fps": null,
+      "npu_verified": false
+    }
+  ]
+}

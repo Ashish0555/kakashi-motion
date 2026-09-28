@@ -1,0 +1,4 @@
+# Native Windows ARM64 Python 3.12; isolated from the x64 OpenCV service.
+# Wheels checked on PyPI. Installation and hardware execution are UNVERIFIED.
+numpy==2.3.5
+onnxruntime-qnn==1.22.2

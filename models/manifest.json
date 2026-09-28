@@ -1,0 +1,40 @@
+{
+  "name": "XFeat",
+  "upstream": "https://github.com/verlab/accelerated_features",
+  "revision": "e92685f57f8318b18725c5c8c0bd28c7fe188d9a",
+  "license": "Apache-2.0",
+  "weights_sha256": "0f5187fd7bedd26c7fe6acc9685444493a165a35ecc087b33c2db3627f3ea10b",
+  "onnx_sha256": "c77562058b3511df83a81c2804d3696928f403af77239aa51a3fb00abc1171c1",
+  "opset": 17,
+  "input": [
+    1,
+    1,
+    256,
+    320
+  ],
+  "preprocessing": "gray resize 320x256, /255, (x-mean)/sqrt(var+1e-5); NumPy biased variance",
+  "quantization": "none; float32",
+  "operators": [
+    "Add",
+    "AveragePool",
+    "Concat",
+    "Constant",
+    "Conv",
+    "ReduceMean",
+    "Relu",
+    "Reshape",
+    "Resize",
+    "Shape",
+    "Sigmoid",
+    "Slice",
+    "Transpose",
+    "Unsqueeze"
+  ],
+  "export_max_absolute_errors": [
+    7.62939453125e-06,
+    1.4066696166992188e-05,
+    1.1920928955078125e-07
+  ],
+  "target_npu_verified": false,
+  "notes": "Sparse extraction only; fine matcher and LighterGlue not used. CPU postprocessing and matching."
+}

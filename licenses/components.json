@@ -1,0 +1,47 @@
+[
+  {
+    "package": "numpy",
+    "version": "2.2.6",
+    "license": "Copyright (c) 2005-2024, NumPy Developers."
+  },
+  {
+    "package": "scipy",
+    "version": "1.15.3",
+    "license": "Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers."
+  },
+  {
+    "package": "opencv-contrib-python-headless",
+    "version": "4.11.0.86",
+    "license": "Apache 2.0"
+  },
+  {
+    "package": "fastapi",
+    "version": "0.115.12",
+    "license": "See included notice"
+  },
+  {
+    "package": "uvicorn",
+    "version": "0.34.2",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "package": "onnxruntime",
+    "version": "1.22.1",
+    "license": "MIT License"
+  },
+  {
+    "package": "websockets",
+    "version": "15.0.1",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "package": "pydantic",
+    "version": "2.11.5",
+    "license": "MIT"
+  },
+  {
+    "package": "starlette",
+    "version": "0.46.2",
+    "license": "BSD-3-Clause"
+  }
+]

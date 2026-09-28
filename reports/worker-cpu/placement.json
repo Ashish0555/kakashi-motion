@@ -1,0 +1,13 @@
+{
+  "profile": "reports/worker-cpu/ort_2026-09-28_12-20-03.json",
+  "executed_node_event_counts": {
+    "CPUExecutionProvider": 238
+  },
+  "node_total_ms": {
+    "CPUExecutionProvider": 17.116000000000057
+  },
+  "qnn_node_execution_observed": false,
+  "cpu_fallback_events": 238,
+  "all_recorded_node_events_qnn": false,
+  "npu_claim_requires": "Actual Snapdragon device metadata, strict QNN HTP backend configuration, and detailed QNN profiling evidence; this script alone is insufficient."
+}
